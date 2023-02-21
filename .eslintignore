@@ -1,0 +1,15 @@
+/dist/*
+/components/*
+/context/*
+/graphql/*
+/util/*
+/theme/*
+/types/*
+/theme/
+.eslintrc.json
+postcss.config.cjs
+tsconfig.json
+tsconfig.node.json
+tailwind.config.cjs
+vite.config.ts
+vite-env.d.ts
