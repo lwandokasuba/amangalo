@@ -1,7 +1,9 @@
-import {NavBar} from './NavBar';
-import {Footer} from './Footer';
+import { Nav } from './Nav';
+import { NavBar } from './NavBar';
+import { Footer } from './Footer';
 
 export {
-	NavBar,
-	Footer,
+  Nav,
+  NavBar,
+  Footer,
 };

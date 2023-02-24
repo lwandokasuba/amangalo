@@ -6,16 +6,16 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
 export function NavBar() {
-	return (
-		<Box sx={{flexGrow: 1}}>
-			<AppBar position='static'>
-				<Toolbar>
-					<Typography variant='h6' component='div' sx={{flexGrow: 1}}>
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Amangalo
-					</Typography>
-					<Button color='inherit'>Login</Button>
-				</Toolbar>
-			</AppBar>
-		</Box>
-	);
+          </Typography>
+          <Button color="inherit">Login</Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
+  );
 }
