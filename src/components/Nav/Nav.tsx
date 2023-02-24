@@ -6,8 +6,8 @@ export function Nav() {
       <h1 className="font-poppins text-black text-[35px] cursor-pointer">Amangalo</h1>
 
       <div>
-        <ul className={`flex justify-end`}>
-          <li className='text-poppins '>About</li>
+        <ul className="flex justify-end">
+          <li className="text-poppins ">About</li>
           <li>Create</li>
           <li>Learn</li>
         </ul>
