@@ -50,11 +50,11 @@
    ```
 2. Install NPM packages
    ```sh
-   npm install
+   npm install -f
    ```
 3. Run the local environment
     ```sh
-    npm start
+    npm run dev
     ```
     
  <!-- Documenting -->
