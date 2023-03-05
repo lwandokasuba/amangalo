@@ -37,7 +37,6 @@
 [![Firebase]][Firebase]
 [![Material-UI]][Material-UI]
 [![Tailwind]][Tailwind]
-[![Graphql]][Graphql]
 [![Eslint]][Eslint]
 
 <!-- Getting Started -->
