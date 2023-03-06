@@ -19,8 +19,7 @@ jobs:
         envkey_VITE_PROJECT_ID: '${{ secrets.FIREBASE_DEV_PROJECT_ID }}'
         envkey_VITE_STORAGE_BUCKET: '${{ secrets.FIREBASE_DEV_STORAGE_BUCKET }}'
         envkey_VITE_MESSAGING_SENDER: '${{ secrets.FIREBASE_DEV_MESSAGING_SENDER }}'
-        envkey_VITE_APP_ID=: '${{ secrets.FIREBASE_DEV_APP_ID }}'
-        directory: './dist'
+        envkey_VITE_APP_ID: '${{ secrets.FIREBASE_DEV_APP_ID }}'
         fail_on_empty: false
   build_and_deploy:
     runs-on: ubuntu-latest
