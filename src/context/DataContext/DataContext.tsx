@@ -2,26 +2,24 @@
 import React, {
   createContext, FC, useContext,
 } from 'react';
-import { Database, getDatabase } from 'firebase/database';
 import { DataProviderProps } from './DataProvider.types';
 import { DataContextProps } from './DataContext.types';
-import { app } from '../../firebase';
 
 const DataContext = createContext<DataContextProps>(undefined!);
 export function useData() {
   return useContext(DataContext);
 }
 
-export const DataProviderBase: FC<{ children: React.ReactNode, database: Database }> = ({
+export const DataProviderBase: FC<{ children: React.ReactNode }> = ({
   children,
-  database,
 }) => {
   // eslint-disable-next-line no-console
   console.log('DataProviderBase');
+  const test = 'test';
   return (
     <DataContext.Provider
       value={{
-        database,
+        test,
       }}
     >
       {children}
@@ -32,11 +30,11 @@ export const DataProviderBase: FC<{ children: React.ReactNode, database: Databas
 export const DataProvider: FC<DataProviderProps> = ({
   children,
 }) => {
-  const database = getDatabase(app);
+  // const database = getDatabase(app);
+  // eslint-disable-next-line no-console
   console.log(import.meta.env.VITE_API_KEY);
-  if (!database) return <></>;
   return (
-    <DataProviderBase database={database}>
+    <DataProviderBase>
       {children}
     </DataProviderBase>
   );
