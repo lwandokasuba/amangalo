@@ -33,6 +33,7 @@ export const DataProvider: FC<DataProviderProps> = ({
   children,
 }) => {
   const database = getDatabase(app);
+  console.log(import.meta.env.VITE_API_KEY);
   if (!database) return <></>;
   return (
     <DataProviderBase database={database}>
