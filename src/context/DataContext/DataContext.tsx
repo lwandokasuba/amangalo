@@ -32,7 +32,7 @@ export const DataProvider: FC<DataProviderProps> = ({
 }) => {
   // const database = getDatabase(app);
   // eslint-disable-next-line no-console
-  console.log(import.meta.env.VITE_API_KEY);
+  console.log(import.meta.env.VITE_APP_ID);
   return (
     <DataProviderBase>
       {children}
