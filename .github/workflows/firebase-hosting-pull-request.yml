@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run:       - run: echo 'VITE_API_KEY=${{ secrets.FIREBASE_DEV_API_KEY }}' > .env && echo 'ITE_AUTH_DOMAIN=${{ secrets.FIREBASE_DEV_AUTH_DOMAIN }}' > .env && echo 'VITE_DATABASE_URL=${{ secrets.FIREBASE_DEV_DATABASE_URL }}' > .env && echo 'VITE_PROJECT_ID=${{ secrets.FIREBASE_DEV_PROJECT_ID }}' > .env && echo VITE_STORAGE_BUCKET=${{ secrets.FIREBASE_DEV_STORAGE_BUCKET }}' > .env && echo 'VITE_MESSAGING_SENDER=${{ secrets.FIREBASE_DEV_MESSAGING_SENDER }}' > .env && echo 'VITE_APP_ID=${{ secrets.FIREBASE_DEV_APP_ID }}' > .env && npm install -f && npm run build
+      - run: echo 'VITE_API_KEY=${{ secrets.FIREBASE_DEV_API_KEY }}' > .env && echo 'ITE_AUTH_DOMAIN=${{ secrets.FIREBASE_DEV_AUTH_DOMAIN }}' > .env && echo 'VITE_DATABASE_URL=${{ secrets.FIREBASE_DEV_DATABASE_URL }}' > .env && echo 'VITE_PROJECT_ID=${{ secrets.FIREBASE_DEV_PROJECT_ID }}' > .env && echo VITE_STORAGE_BUCKET=${{ secrets.FIREBASE_DEV_STORAGE_BUCKET }}' > .env && echo 'VITE_MESSAGING_SENDER=${{ secrets.FIREBASE_DEV_MESSAGING_SENDER }}' > .env && echo 'VITE_APP_ID=${{ secrets.FIREBASE_DEV_APP_ID }}' > .env && npm install -f && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
